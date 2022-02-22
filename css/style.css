@@ -1,0 +1,162 @@
+*{
+    /* border: 0.1px solid red; */
+    background-color: #F7F7F8;
+}
+
+body{
+    margin: 0;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+}
+
+/* HEADEr */
+
+header{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+}
+
+header h2{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #26727E;
+    padding: 10px;
+    border: 3px solid #36393A;
+    margin: 0;
+    color: white;
+    letter-spacing: 2px;  
+}
+
+header h2 a{
+    padding: 10px;
+    text-decoration: none;
+    color: #26727E;
+    border-radius: 15px;
+}
+
+header h2 a:hover{
+    transform: scale(2);
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li{
+    display: inline-block;
+    
+}
+.navbar ul li a{
+    padding: 10px;
+    font-size: 18px;
+    margin-right: 10px;
+    border-radius: 15px;
+    border: 3px solid #26727E;
+    color: #26727E;
+} 
+
+.navbar ul li a:hover{
+    background-color: #26727E;
+    color: white;
+    transition: all .1s linear .1s;
+} 
+
+.about-us {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 234px;
+    padding: 20px;
+}
+
+.about-us h1,p{
+    text-align: center; 
+    color: #26727E;
+}
+
+.about-us h1{
+    border-radius: 15px;
+    border: 3px solid #26727E;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.about-us p{
+    line-height: 30px;
+}
+footer{
+    margin: 0;
+}
+
+#copyright-info{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: #26727E;
+}
+
+.events-title{
+    margin-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #26727E;
+}
+
+.events {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+    padding: 20px;
+    border-radius:15px;
+    margin-bottom: 20px;
+  }
+
+#events-main{
+    width: 60%;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+#events-title, #keep-fit-title{
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid #26727E;
+}
+
+figcaption{
+    text-align: center;
+    margin-top: 10px;
+}
+
+figure img{
+    border: 2px solid #2B818E;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+figure img:hover{
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 600px){
+    .events{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .events{
+        flex-direction: column;
+        align-items: center;
+    }
+}
